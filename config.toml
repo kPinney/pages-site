@@ -1,0 +1,10 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "My Personal Webpage"
+theme = "ananke"
+
+[params]
+  author = "Your Name"
+
+[markup.goldmark.renderer]
+  unsafe = true

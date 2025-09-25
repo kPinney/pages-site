@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article>
+    <h2>{{ .Title }}</h2>
+    <p>Published on {{ .Date.Format "January 2, 2006" }}</p>
+    <div>
+        {{ .Content }}
+    </div>
+    <div>
+        Tags:
+        {{ range .Params.tags }}
+        <a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </div>
+</article>
+{{ end }}
